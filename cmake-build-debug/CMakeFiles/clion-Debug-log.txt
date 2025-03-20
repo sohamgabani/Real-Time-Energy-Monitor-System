@@ -1,0 +1,5 @@
+/snap/clion/326/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/arm-none-eabi-g++ -DCMAKE_TOOLCHAIN_FILE=/home/sg26/CLionProjects/RTEMS/cmake-build-debug/arm-none-eabi-gcc.cmake -G "Unix Makefiles" -S /home/sg26/CLionProjects/RTEMS -B /home/sg26/CLionProjects/RTEMS/cmake-build-debug
+-- Minimal optimization, debug info included
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/sg26/CLionProjects/RTEMS/cmake-build-debug
