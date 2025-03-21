@@ -5,27 +5,27 @@ The Real-Time Energy Monitor System is designed for the STM32F407VG microcontrol
 
 2. Features
 
-- Real-time monitoring:** Reads voltage and current using ADC.
-- Power calculation:** Computes power consumption using calibrated sensor values.
-- Data logging:** Logs sensor readings to an SD card and transmits via UART.
+- Real-time monitoring: Reads voltage and current using ADC.
+- Power calculation: Computes power consumption using calibrated sensor values.
+- Data logging: Logs sensor readings to an SD card and transmits via UART.
 - Embedded C++ Implementation:** Uses STM32 HAL library and object-oriented design.
 
 3. System Architecture
 
 3.1 Hardware Components
 
-- STM32F407VG**: Cortex-M4 microcontroller
-- Voltage Sensor**: Connected to ADC (PA0)
-- Current Sensor (ACS712)**: Connected to ADC (PA1)
-- SD Card Module**: Uses SPI for storage
-- UART (USART2)**: Serial communication for data output
+- STM32F407VG: Cortex-M4 microcontroller
+- Voltage Sensor: Connected to ADC (PA0)
+- Current Sensor (ACS712): Connected to ADC (PA1)
+- SD Card Module: Uses SPI for storage
+- UART (USART2): Serial communication for data output
 
 3.2 Software Components
 
-- STM32 HAL Drivers:** Manages peripherals (ADC, UART, SPI)
-- FatFS Library:** Handles SD card operations
-- CMake Build System:** For compilation and linking
-- CLion IDE:** Used for development
+- STM32 HAL Drivers: Manages peripherals (ADC, UART, SPI)
+- FatFS Library: Handles SD card operations
+- CMake Build System: For compilation and linking
+- CLion IDE: Used for development
 
 4. Implementation Details
 
@@ -56,7 +56,7 @@ public:
 Data is stored in CSV format:
 
 Timestamp, Voltage (V), Current (A), Power (W)
-2025-03-20 12:00:01, 230.5, 5.2, 1197.6
+12:00:01, 230.5, 5.2, 1197.6
 
 
 4.3 UART Communication
@@ -65,9 +65,9 @@ Data is sent to the serial monitor in a structured format.
 
 5. Setup & Execution
 
-1. Flash Firmware**: Use STM32CubeProgrammer to upload the compiled binary.
-2. Connect Sensors & SD Card**: Ensure correct wiring.
-3. Open UART Terminal**: Monitor live energy data.
+1. Flash Firmware: Use STM32CubeProgrammer to upload the compiled binary.
+2. Connect Sensors & SD Card: Ensure correct wiring.
+3. Open UART Terminal: Monitor live energy data.
 
 6. Future Enhancements
 
